@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactes</title>
+    <link rel="stylesheet" href="../Css/estilContactes.css">
+</head>
+<body>
+    <header>
+        <h1><b>MotoGP Total</b></h1><br>
+        <nav>
+            <ul>
+                <li><a href="Horari.html">Calendari</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="Contactes.html">Contactes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contacte</h1>
+    <form action="/submit_contact" method="post">
+        <label for="Nom">Nom:</label>
+        <input type="text" required placeholder="Escriu el teu nom"><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" required placeholder="Escriu el teu correu electrònic"><br><br>
+
+        <label for="Telèfon">Telèfon:</label>
+        <input type="tel" placeholder="Escriu el teu telèfon" maxlength="9"><br><br>
+
+        <label for="genere">Gènere:</label><br>
+        <input type="radio" name="genere" >
+        <label for="male">Home</label><br>
+        <input type="radio" name="genere" >
+        <label for="female">Dona</label><br>
+        <input type="radio" name="genere" >
+        <label for="other">Altres</label><br><br>
+
+        <label for="País">País:</label>
+        <select>
+            <option value="Espanya">Espanya</option>
+            <option value="França">França</option>
+            <option value="Alemanya">Alemanya</option>
+            <option value="Itàlia">Itàlia</option>
+        </select><br><br>
+
+        <label for="newsletter">No soc un robot</label>
+        <input type="checkbox"><br><br>
+
+        <label for="Missatge">Missatge:</label><br><br>
+        <textarea rows="4" cols="50" placeholder="Escriu el teu missatge"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <footer>
+        <a href="Index.html">Torna a la pàgina principal</a>
+    </footer>
+</body>
+</html>
